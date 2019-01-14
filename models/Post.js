@@ -8,7 +8,7 @@ const PostSchema = new Schema({
         ref: 'users'
     },
     text: {
-        type: String, 
+        type: String,
         required: true
     },
     name: {
@@ -31,9 +31,12 @@ const PostSchema = new Schema({
                 type: Schema.Types.ObjectId,
                 ref: 'users'
             },
-            test: {
+            text: {
                 type: String,
                 required: true
+            },
+            name: {
+                type: String
             },
             avatar: {
                 type: String
